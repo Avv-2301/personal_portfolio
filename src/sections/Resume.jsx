@@ -1,0 +1,5 @@
+import Icon from '../components/Icon'
+import { competencies, education, resumePdf } from '../data/portfolio'
+export default function Resume() {
+  return <section id="resume" className="resume-section panel"><div className="resume-heading"><div><span className="eyebrow">Curriculum Vitae Overview</span><h2>Qualifications &amp; Competencies</h2></div><div className="resume-actions"><a className="button button-primary" href={resumePdf} download><Icon name="download" size={16}/>Download Resume PDF</a><a className="button button-muted" href="/resume">View Full CV <Icon name="arrow" size={16}/></a></div></div><div className="competencies">{competencies.map(item => <div key={item.title}><h3><Icon name={item.icon} size={17}/>{item.title}</h3><p>{item.description}</p></div>)}</div><div className="education"><div className="education-degrees">{education.map(item => <article key={item.degree}><h3>{item.degree} <span>{item.period}</span></h3><p>{item.school} — {item.location}</p></article>)}</div></div></section>
+}

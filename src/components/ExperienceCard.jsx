@@ -1,0 +1,4 @@
+import Tags from './Tags'
+export default function ExperienceCard({ experience }) {
+  return <article className="experience-card panel"><div className="experience-date"><strong>{experience.period}</strong><span>{experience.location}</span></div><div className="experience-content"><div className="experience-title"><h3>{experience.role}</h3><span className={experience.current ? 'company-tag company-current' : 'company-tag'} aria-label={experience.current ? `Currently working at ${experience.company}` : experience.company}>{experience.current && <><i aria-hidden="true"/><span className="company-current-label">Currently working at</span></>}<strong>{experience.company}</strong></span></div><ul>{experience.points.map(point => <li key={point}>{point}</li>)}</ul><Tags items={experience.tags}/></div></article>
+}

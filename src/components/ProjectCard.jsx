@@ -1,0 +1,5 @@
+import Icon from './Icon'
+import Tags from './Tags'
+export default function ProjectCard({ project, onSelect }) {
+  return <article className={`project-card panel${project.theme ? ` project-${project.theme}` : ''}`}><button className="project-image" onClick={() => onSelect(project)} aria-label={`Preview ${project.name}`}><img src={project.image} alt={project.alt} loading="lazy"/><span className="project-badge">{project.badge}</span></button><div className="project-content"><div className="project-title"><h3><button onClick={() => onSelect(project)}>{project.name}</button></h3><div><button className="icon-button" onClick={() => onSelect(project)} aria-label={`${project.name} technology details`}><Icon name="code" size={17}/></button><button className="icon-button" onClick={() => onSelect(project)} aria-label={`View ${project.name}`}><Icon name="arrow" size={17}/></button></div></div><p>{project.description}</p><div className="project-metric"><span>{project.metricLabel}:</span><strong>{project.metric}</strong></div><Tags items={project.tags}/></div></article>
+}

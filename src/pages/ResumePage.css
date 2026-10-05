@@ -1,0 +1,8 @@
+.resume-page{min-height:100vh;background:#edeeef;padding:24px clamp(16px,4vw,56px) 40px}
+.resume-page-header{max-width:1120px;margin:0 auto 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.resume-page-brand{display:flex;flex-direction:column;font-size:18px;font-weight:700}
+.resume-page-brand span{font-size:12px;font-weight:400;color:var(--muted);margin-top:3px}
+.resume-page-header nav{display:flex;align-items:center;gap:10px}
+.resume-preview{width:min(100%,1120px);height:calc(100vh - 116px);min-height:600px;margin:0 auto;background:#fff;border:1px solid #e1e3e4;border-radius:6px;overflow:hidden}
+.resume-preview iframe{display:block;width:100%;height:100%;border:0}
+@media(max-width:600px){.resume-page{padding:16px 12px 24px}.resume-page-header{align-items:flex-start}.resume-page-brand{font-size:15px}.resume-page-header nav{gap:6px}.resume-page-header .button{font-size:11px;padding:9px 10px}.resume-preview{height:calc(100vh - 100px);min-height:480px}}
