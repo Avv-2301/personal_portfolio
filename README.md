@@ -1,4 +1,4 @@
-# Minimalist personal portfolio
+# Akshat personal portfolio
 
 React + Vite implementation of the supplied portfolio screenshot and HTML. The page uses the original neutral layout, reusable React components, and the supplied imagery.
 
