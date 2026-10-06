@@ -11,17 +11,5 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <script>
-      if (
-        !window.matchMedia('(prefers-reduced-motion: reduce)').matches &&
-        window.matchMedia('(hover: hover) and (pointer: fine)').matches
-      ) {
-        const nekoScript = document.createElement('script')
-        nekoScript.src = 'https://louisabraham.github.io/nekojs/neko.js'
-        nekoScript.dataset.autostart = ''
-        nekoScript.async = true
-        document.body.append(nekoScript)
-      }
-    </script>
   </body>
 </html>
