@@ -1,5 +1,5 @@
 import images from './images.json'
-import profilePhoto from '../assets/akshat-profile.jpg'
+import profilePhoto from '../assets/akshat-profile-transparent.png'
 // Resume facts replace the original sample where the resume provides them.
 export const resumePdf = '/Akshat_Vijayvergiya_Resume_FullStackDeveloper.pdf'
 export const assets = { logo: images[1], avatar: profilePhoto, portrait: profilePhoto }

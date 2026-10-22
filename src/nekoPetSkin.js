@@ -1,9 +1,9 @@
 const petSkins = [
-  { name: 'copper', filter: 'sepia(0.75) saturate(2.2) hue-rotate(330deg)' },
-  { name: 'ocean', filter: 'sepia(0.55) saturate(2.5) hue-rotate(155deg)' },
-  { name: 'violet', filter: 'sepia(0.6) saturate(2.6) hue-rotate(235deg)' },
-  { name: 'rose', filter: 'sepia(0.65) saturate(2.4) hue-rotate(285deg)' },
-  { name: 'lime', filter: 'sepia(0.55) saturate(2.4) hue-rotate(75deg)' },
+  { name: 'copper', filter: 'sepia(.8) saturate(2.8) hue-rotate(330deg)' },
+  { name: 'ocean', filter: 'sepia(.65) saturate(3) hue-rotate(155deg)' },
+  { name: 'violet', filter: 'sepia(.7) saturate(3) hue-rotate(235deg)' },
+  { name: 'rose', filter: 'sepia(.75) saturate(2.8) hue-rotate(285deg)' },
+  { name: 'lime', filter: 'sepia(.65) saturate(3) hue-rotate(75deg)' },
 ]
 
 const lastSkinKey = 'portfolio-neko-last-skin'
@@ -14,19 +14,19 @@ function choosePetSkin() {
   try {
     previousIndex = Number(window.localStorage.getItem(lastSkinKey))
   } catch {
-    // Storage can be unavailable in private browsing; randomness still works.
+    // Continue with a random skin if browser storage is unavailable.
   }
 
   const choices = petSkins.map((_, index) => index).filter((index) => index !== previousIndex)
-  const index = choices[Math.floor(Math.random() * choices.length)]
+  const skin = petSkins[choices[Math.floor(Math.random() * choices.length)]]
 
   try {
-    window.localStorage.setItem(lastSkinKey, String(index))
+    window.localStorage.setItem(lastSkinKey, String(petSkins.indexOf(skin)))
   } catch {
-    // The skin is still applied for this visit when storage is unavailable.
+    // The selected skin still applies for this visit.
   }
 
-  return petSkins[index]
+  return skin
 }
 
 export function installNekoPetSkin() {
@@ -38,11 +38,11 @@ export function installNekoPetSkin() {
   }
 
   const skin = choosePetSkin()
-  const applySkin = (root) => {
-    if (root.matches('.neko') && root.dataset.portfolioPetSkin !== 'applied') {
-      root.style.filter = skin.filter
-      root.dataset.portfolioPetSkin = 'applied'
-      root.dataset.portfolioPetColor = skin.name
+  const applySkin = (element) => {
+    if (element.matches('.neko') && element.dataset.portfolioPetSkin !== 'applied') {
+      element.style.filter = skin.filter
+      element.dataset.portfolioPetSkin = 'applied'
+      element.dataset.portfolioPetColor = skin.name
     }
   }
 
@@ -58,7 +58,6 @@ export function installNekoPetSkin() {
       })
     }
   })
-
   observer.observe(document.body, { childList: true, subtree: true })
 
   const nekoScript = document.createElement('script')

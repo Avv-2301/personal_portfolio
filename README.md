@@ -2,7 +2,8 @@
 
 React + Vite implementation of the supplied portfolio screenshot and HTML. The page uses the original neutral layout, reusable React components, and the supplied imagery.
 
-Desktop visitors with a fine pointer get Neko.js, a small animated cat that follows the cursor. It is skipped for touch-only devices and users who prefer reduced motion.
+Desktop visitors using a mouse or trackpad get Neko.js following the cursor. Its color skin changes between visits and respects reduced-motion preferences.
+
 
 ## Run
 

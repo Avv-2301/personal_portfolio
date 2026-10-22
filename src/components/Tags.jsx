@@ -59,6 +59,6 @@ function TechIcon({ label }) {
   return <span className={isReact ? 'tech-icon tech-icon-react' : 'tech-icon'} aria-hidden="true" style={{ '--tech-color': color }}>{isReact ? <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="2.25" fill="currentColor"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="currentColor" strokeWidth="1.8"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="currentColor" strokeWidth="1.8" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="currentColor" strokeWidth="1.8" transform="rotate(120 12 12)"/></svg> : mark}</span>
 }
 
-export default function Tags({ items }) {
-  return <div className="tags">{items.map(item => <span className="tech-tag" key={item}><TechIcon label={item}/><span>{item}</span></span>)}</div>
+export default function Tags({ items, iconOnly = false }) {
+  return <div className={iconOnly ? 'tags tech-icon-strip' : 'tags'}>{items.map(item => <span className="tech-tag" key={item} role={iconOnly ? 'img' : undefined} aria-label={iconOnly ? item : undefined} title={iconOnly ? undefined : item} tabIndex={iconOnly ? 0 : undefined}><TechIcon label={item}/>{iconOnly ? <span className="tech-tooltip" aria-hidden="true">{item}</span> : <span>{item}</span>}</span>)}</div>
 }
