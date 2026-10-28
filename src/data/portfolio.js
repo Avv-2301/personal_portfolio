@@ -9,7 +9,7 @@ export const profile = {
   title: 'Full Stack Developer',
   location: 'Rajasthan, India',
   phone: '+91 6377608367',
-  summary: 'Full Stack Developer with 2+ years of experience in software implementation, application support, and web development using Python, JavaScript/TypeScript, SQL, React.js, Node.js, and MySQL/MongoDB. Skilled at translating client business requirements into technical solutions, building secure REST APIs, and delivering responsive applications in Agile environments.',
+  summary: 'Full Stack Developer with 2.4 years of experience in software implementation, application support, and web development using Python, JavaScript/TypeScript, SQL, React.js, Node.js, and MySQL/MongoDB. Skilled at translating client business requirements into technical solutions, building secure REST APIs, and delivering responsive applications in Agile environments.',
   stack: ['Python', 'JavaScript / TypeScript', 'React.js', 'Node.js', 'Express.js', 'MySQL', 'MongoDB'],
 }
 export const socials = [
@@ -33,7 +33,8 @@ export const experiences = [
 export const projects = [
   { name: 'AI-Powered Admin Dashboard', theme: 'dashboard', image: images[6], alt: 'Admin dashboard with analytics charts', badge: 'OpenAI API', description: 'End-to-end admin dashboard built with reusable React and TypeScript components, Node.js REST APIs, and LLM-powered summarization prompts.', metricLabel: 'Impact', metric: 'Task processing time cut by 40%', tags: ['React.js', 'TypeScript', 'Node.js', 'OpenAI API', 'REST APIs'] },
   { name: 'Fintech Transaction & Rewards Platform', theme: 'fintech', image: images[5], alt: 'Fintech interface and product design system', badge: '15,000+ accounts', description: 'Fintech platform with validated REST APIs, role-based access control, and injection protection. MySQL and MongoDB integrations maintained 100% data integrity across sources.', metricLabel: 'Focus', metric: 'Wallet, deposits, withdrawals & rewards', tags: ['React.js', 'TypeScript', 'Node.js', 'Express.js', 'MySQL', 'MongoDB'] },
-  { name: 'Vapor', theme: 'vapor', image: '/vapor-project.svg', alt: 'Vapor gaming website concept with dark game library cards', badge: 'Gaming Website', description: 'Gaming website built with JavaScript and React using a microservices architecture. The stack includes RabbitMQ, Nginx, Docker, and CI/CD.', metricLabel: 'Architecture', metric: 'Microservices', tags: ['JavaScript', 'React', 'RabbitMQ', 'Nginx', 'CI/CD', 'Docker'] },
+  { name: 'Vapor Gaming Website', theme: 'vapor', image: '/vapor-project.svg', alt: 'Vapor gaming website concept with dark game library cards', badge: 'Gaming Website', description: 'Gaming website built with JavaScript and React using a microservices architecture. The stack includes RabbitMQ, Nginx, Docker, and CI/CD.', metricLabel: 'Architecture', metric: 'Microservices', tags: ['JavaScript', 'React', 'RabbitMQ', 'Nginx', 'CI/CD', 'Docker'] },
+  { name: 'KashFlow', theme: 'kashflow', image: '/kashflow-project.svg', alt: 'KashFlow expense tracker dashboard with a futuristic financial overview', badge: 'Expense Tracker', description: 'A futuristic expense tracker website for monitoring spending, income, and budgets through a streamlined financial dashboard.', metricLabel: 'Built With', metric: 'React.js, JavaScript & MongoDB', tags: ['React.js', 'JavaScript', 'MongoDB'] },
 ]
 export const competencies = [
   { icon: 'devices', title: 'Frontend Development', description: 'React.js Hooks, reusable component design, state management, JavaScript / TypeScript, HTML5, CSS3, Jest, and React Testing Library.' },

@@ -37,6 +37,7 @@
 .project-fintech .project-badge{background:#e3f5e9;color:#176b3a}.project-fintech .project-content .tags>.tech-tag{background:#e8f3ed;color:#315c43}.project-fintech .project-content .tags>.tech-tag>span:last-child{color:#315c43}
 .project-dashboard .project-badge{background:#e2f3f1;color:#14766d}.project-dashboard .project-content .tags>.tech-tag{background:#e8f4f2;color:#28625e}.project-dashboard .project-content .tags>.tech-tag>span:last-child{color:#28625e}
 .project-vapor .project-badge{background:#eee8ff;color:#6242a1}.project-vapor .project-content .tags>.tech-tag{background:#f0ebf8;color:#59457a}.project-vapor .project-content .tags>.tech-tag>span:last-child{color:#59457a}
+.project-kashflow .project-badge{background:#d8fff3;color:#147961}.project-kashflow .project-content .tags>.tech-tag{background:#e5faf3;color:#176c59}.project-kashflow .project-content .tags>.tech-tag>span:last-child{color:#176c59}
 .social-brand-github{color:#24292f}.social-brand-leetcode{color:#a35f00}.social-brand-linkedin{color:#0a66c2}.social-brand-github:hover{color:#24292f}.social-brand-leetcode:hover{color:#a35f00}.social-brand-linkedin:hover{color:#0a66c2}
 @media(max-width:700px){.education-degrees article h3{font-size:15px}.education-degrees article h3 span{display:block;margin-top:2px}}
 
@@ -59,6 +60,7 @@
 :root[data-theme="dark"] .company-tag{background:#292e37;color:#d2d6dd}
 :root[data-theme="dark"] .company-current{background:#193324;color:#d4f1dd}
 :root[data-theme="dark"] .company-current-label{color:#a8d5b6}
+:root[data-theme="dark"] .company-current strong{color:#f0fff6}
 :root[data-theme="dark"] .project-badge{background:#20242ceF;color:#f1f3f5}
 :root[data-theme="dark"] .project-content .tags>span{background:#292e37;color:#cbd0d8}
 :root[data-theme="dark"] .project-fintech .project-content .tags>.tech-tag,:root[data-theme="dark"] .project-dashboard .project-content .tags>.tech-tag,:root[data-theme="dark"] .project-vapor .project-content .tags>.tech-tag{background:#292e37;color:#d2d6dd}
